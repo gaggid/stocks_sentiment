@@ -49,7 +49,7 @@ TOP_NIFTY_STOCKS = {
 class SentimentAnalyzer:
     """Class to analyze sentiment of text using transformers"""
     
-    def __init__(self, model_name="ProsusAI/finbert"):
+    def __init__(self, model_name="kdave/FineTuned_Finbert"):
         logger.info(f"Initializing sentiment analyzer with model: {model_name}")
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
